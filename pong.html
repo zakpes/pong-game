@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="Exel">
+
+    <title>Pong</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Carter+One|Luckiest+Guy" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="pongBody">
+<!--
+<button class="btn btn-success" onmousedown="moveUpLeft()" onmouseup="stopMove()">UP</button>
+<button class="btn btn-danger" onmousedown="moveDownLeft()" onmouseup="stopMove()">DOWN</button>
+<button class="btn btn-success" onmousedown="moveUpRight()" onmouseup="stopMove()">UP</button>
+<button class="btn btn-danger" onmousedown="moveDownRight()" onmouseup="stopMove()">DOWN</button>
+
+<canvas id="snakeCanvas" width="800" height="400"></canvas> -->
+
+<div class="scoreboard scoreboard-p1">
+    <img class="img-responsive" src="img/rolex-logo.png" alt="Rolex logo">
+    <h2 id="player1" class="player-name player1-name">Player1</h2>
+    <h1 id="scoreP1" class="player-score">0</h1>
+</div>
+
+<canvas id="pongCanvas" width="800" height="600"></canvas>
+
+<div class="scoreboard scoreboard-p2">
+    <img class="img-responsive" src="img/rolex-logo.png" alt="Rolex logo">
+    <h2 id="player2" class="player-name player2-name">Player2</h2>
+    <h1 id="scoreP2" class="player-score">0</h1>
+</div>
+
+<!-- Select court -->
+<!-- <select id="courtToggle" class="court-toggle" onchange="changeCourtSurface()">
+    <option value="hardcourt">Hardcourt</option>
+    <option value="clay">Clay</option>
+    <option value="grass">Grass</option>
+</select> -->
+
+<!-- Select court buttons -->
+<!-- <button id="btnHardcourt" class="btn btn-primary" type="button" name="button">Hardcourt</button>
+<button id="btnClay" class="btn btn-danger" type="button" name="button">Clay</button>
+<button id="btnGrass" class="btn btn-success" type="button" name="button">Grass</button> -->
+
+<audio id="ball-sound" src="sound/misc128.wav" type="audio/wav"></audio>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/pong/pong-main.js" charset="utf-8"></script>
+
+</body>
+
+</html>

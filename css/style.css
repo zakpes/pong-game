@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "DJB";
+    src: url("fonts/djb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Times Square";
+    src: url("fonts/TIMES_SQ.ttf") format("truetype");
+}
+
+/* Colors
+ * ====================================
+
+green: hsl(142, 75%, 23%);
+yellow: hsl(67, 100%, 54%);
+grey: hsl(0, 0%, 15%);
+
+hardcourt {
+    background-color: hsl(218, 50%, 40%);
+    outline: hsl(105, 23%, 54%);
+clay {
+    color1: hsl(20, 73%, 60%);
+    color2: hsl(12, 60%, 41%);
+}
+grass {
+    light: hsl(89, 57%, 47%);
+    dark: hsl(91, 70%, 41%);
+
+    dark2: hsl(70, 74%, 13%)
+    light2: hsl(70, 48%, 22%)
+
+    dark3: hsl(73, 66%, 29%)
+    light3: hsl(72, 36%, 50%)
+}
+}
+
+ */
+
+body {
+    background-image: url(../img/clay-bg-slate800.png);
+    background-position: 0 0;
+    background-repeat: repeat;
+    font-family: "Times Square", sans-serif;
+    background-color: hsl(354, 56%, 18%);
+}
+
+#pongCanvas, #snakeCanvas, #bricksCanvas {
+    border: 5px solid white;
+    margin: 30px auto 0;
+    display: block;
+}
+
+.scoreboard {
+    position: absolute;
+    background-color: hsl(163, 29%, 22%);
+    color: hsl(51, 64%, 61%);
+    top: 160px;
+    text-align: center;
+    width: 230px;
+    height: 140px;
+    border: 2px solid #fff;
+}
+
+.img-responsive {
+    margin: 10px auto 0;
+}
+
+.player-name, .player-score {
+    background-color: hsl(0, 0%, 15%);
+    font-size: 40px;
+    display: inline-block;
+    padding: 0 6px;
+    width: 148px;
+    text-align: right;
+}
+
+.player-score {
+    width: 47px;
+}
+
+.scoreboard-p1 {
+    left: 20px;
+}
+
+.scoreboard-p2 {
+    right: 20px;
+}
